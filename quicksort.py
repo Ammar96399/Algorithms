@@ -1,13 +1,9 @@
 def partition(arr, low, high): 
-    i = (low - 1)       # index of smaller element 
-    pivot = arr[high]   # pivot 
+    pivot = arr[high] 
+    i = (low - 1)       
 
     for j in range(low, high):
-
-        # If current element is smaller than or equal to pivot
         if arr[j] <= pivot:
-
-            #increment index of smaller element 
             i = i + 1
             arr[i], arr[j] = arr[j], arr[i] 
 
@@ -16,10 +12,7 @@ def partition(arr, low, high):
 
 def quickSort(arr, low, high):
     if low < high:
-
-        # pi is partitioning index, arr[p] is now at right place 
         pi = partition(arr, low, high)
-
         quickSort(arr, low, pi-1)
         quickSort(arr, pi+1, high)
 
