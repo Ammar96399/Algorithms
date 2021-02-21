@@ -38,6 +38,6 @@ def triFusion (A, left_index, right_index):
     fusion(A, left_index, right_index, middle)
 
 
-A = [33, 42, 9, 37, 8, 47, 5, 29, 49, 31, 4, 48, 16, 22, 26]
+A = [99, 101, 34, 22, 32, 8, 33, 12, 54, 44, 44, 44, 12, 0, 44, 12, 100]
 triFusion(A, 0, len(A) -1)
 print(A)
